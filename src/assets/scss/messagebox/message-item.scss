@@ -1,0 +1,55 @@
+@media (min-width: 0) {
+	.message-item {
+		max-width: 380px;
+		margin: 0 auto 20px 0;
+		&:first-child {
+			margin: 20px auto 20px 0;
+		}
+		&.is_owner {
+			margin: 0 0 20px auto;
+			&:first-child {
+				margin: 20px 0 20px auto;
+			}
+			.message-item__text {
+				background-color: #e9f5f4;
+				border-radius: 8px 8px 0px 8px;
+				p {
+					color: #475453;
+				}
+			}
+			.message-item__info {
+				justify-content: flex-end;
+			}
+		}
+		&__text {
+			background-color: #f6f7f9;
+			border-radius: 8px 8px 8px 0px;
+			padding: 18px 18px 16px 25px;
+			p {
+				margin: 0;
+				font-size: 14px;
+				line-height: 1.4;
+				color: #474e54;
+			}
+		}
+		&__info {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin: 9px 0 0;
+			&__author {
+				font-size: 13px;
+				font-weight: 700;
+				line-height: 1.4;
+				color: #000;
+			}
+			&__date {
+				font-size: 10px;
+				font-weight: 700;
+				line-height: 1.4;
+				color: #b7c0c8;
+				margin: 0 0 0 12px;
+			}
+		}
+	}
+}
